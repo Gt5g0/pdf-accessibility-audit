@@ -19,7 +19,7 @@ You can check hundreds of PDFs in minutes instead of opening each one manually.
 ### 1. Get the code
 
 ```bash
-git clone <repository-url> pdf-accessibility-audit
+git clone https://github.com/Gt5g0/pdf-accessibility-audit pdf-accessibility-audit
 cd pdf-accessibility-audit
 ```
 
