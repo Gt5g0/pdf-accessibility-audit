@@ -1,0 +1,50 @@
+# --- Data source: "local" (disk) or "box" (Box.com via Developer Token) ---
+source: local
+
+# Path to veraPDF CLI, or "auto" to search PATH and common install folders.
+verapdf_path: auto
+
+# Local only: student subfolders live directly under this path.
+# Use an absolute path, or a path relative to the directory you run python from (usually this project folder).
+root_folder: "sample_pdfs"
+
+# Excel report output directory (created if missing). Relative paths are resolved from your current working directory.
+output_dir: "reports"
+
+# Parallel veraPDF worker processes (>= 1).
+# Use the number of cores available on your machine.
+max_processes: 4
+
+# Optional: subprocess timeout in seconds (omit or null for no timeout).
+# timeout_seconds: null
+
+# Optional: pass --disableerrormessages to veraPDF for faster runs (default false).
+disable_error_messages: false
+
+# scope.mode controls which PDFs are included (first-level folder = "student" name in reports).
+#
+#   all      — Scan every *.pdf under root_folder (or the whole Box subtree). The
+#              students list is ignored; use this for a full cohort or a flat folder.
+#
+#   students — Only PDFs under first-level folders whose names appear in students
+#              (case-insensitive). List folder names exactly as on disk. Keys under
+#              scope: must share the same indentation (e.g. students: aligned with mode:).
+#
+scope:
+  mode: students
+  students:
+    - Doe, John
+    - Doe, Jane
+  # Example for scanning everyone (uncomment and switch mode; students not used):
+  # mode: all
+
+# --- Box (used when source: box) ---
+# Paste a Developer Token from https://app.box.com/developers/console → your app → Configuration.
+# Tokens expire quickly; generate a new one when API calls start failing with 401.
+box:
+  developer_token: ""
+  # Box folder ID to scan (numeric ID from the folder URL).
+  root_folder_id: ""
+  # Download PDFs here before veraPDF runs (relative to cwd unless absolute).
+  staging_dir: "box_staging"
+  clear_staging_before_run: true

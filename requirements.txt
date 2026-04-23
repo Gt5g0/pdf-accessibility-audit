@@ -1,0 +1,6 @@
+# Core: local folder scan + Excel reports (always install these).
+PyYAML>=6.0.1
+openpyxl>=3.1.0
+
+# Optional: install only if config.yaml uses source: box (Box downloads).
+box-sdk-gen>=1.0.0
