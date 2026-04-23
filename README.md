@@ -2,7 +2,7 @@
 
 ## What this tool does
 
-This Python script scans a folder full of PDFs (or downloads them from Box.com), runs the **veraPDF** accessibility checker on every file, and produces a **color-coded Excel report** showing which PDFs pass or fail the PDF/UA-1 standard.
+This Python script scans a folder full of PDFs (or downloads them from Box.com), runs the **veraPDF** accessibility checker on every file, and produces a **color-coded Excel report** showing which PDFs pass or fail each checkpoint for the PDF/UA-1 standard.
 
 You can check hundreds of PDFs in minutes instead of opening each one manually.
 
