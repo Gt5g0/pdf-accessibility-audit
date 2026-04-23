@@ -51,7 +51,7 @@ pip install -r requirements.txt
 veraPDF is a separate program that checks PDFs for accessibility. You need to download and install it manually.
 
 **Step 4a: Download the installer**
-Go to the veraPDF downloads page (`https://software.verapdf.org/releases`) and download the latest **installer ZIP file**. Choose the stable release (not the development build) unless you have a specific reason to use the newer version.
+Go to the veraPDF [downloads page](https://software.verapdf.org/releases) and download the latest **installer ZIP file**. Choose the stable release (not the development build) unless you have a specific reason to use the newer version.
 
 **Step 4b: Run the installer**
 The installer ZIP contains everything you need to set up veraPDF. Once you've extracted the ZIP file:
@@ -100,7 +100,7 @@ scope:
 If you want to audit PDFs stored in a Box.com account, you'll need to create a Box application and get a developer token.
 
 **Step 6a: Create a Box App**
-1.  Log in to your Box account and go to the Box Developer Console (https://app.box.com/developers/console).
+1.  Log in to your Box account and go to the [Box Developer Console](https://app.box.com/developers/console).
 2.  Click **"Create New App"** or **"Create Platform App"**.
 3.  For the authentication method, select **"User Authentication (OAuth 2.0)"**. This is the standard option for accessing your own files.
 4.  Give your app a name (e.g., "PDF Audit Tool") and click **"Create App"**.
