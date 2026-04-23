@@ -59,16 +59,6 @@ The installer ZIP contains everything you need to set up veraPDF. Once you've ex
 - **Windows:** Double-click the `verapdf-install.bat` file or run it from a command prompt.
 - **macOS / Linux:** Open a terminal in the extracted folder and run the bash script with `./verapdf-install`.
 
-Examples:
-
-```powershell
-.\verapdf-install.bat
-```
-
-```bash
-./verapdf-install
-```
-
 The installer will guide you through a few simple steps:
 1.  **Choose installation location:** You can accept the default or pick a folder you'll remember.
 2.  **Select components:** It's safe to keep all the default options checked.
@@ -165,7 +155,7 @@ python audit_pipeline.py path\to\my_config.yaml
 - The script will scan for PDFs, run veraPDF, and create an Excel file in the `output_dir` folder.
 - The Excel file is named `accessibility_audit_YYYYMMDD_HHMMSS.xlsx`.
 - Open it to see:
-  - A **Summary** sheet with each PDF's name, pass/fail status, and counts of passed/failed checkpoints (colored red/green).
+  - A **Summary** sheet with each PDF's name, pass/fail status, and counts of passed/failed checkpoints (colored green/red).
   - A separate **Detail** sheet for every PDF, listing exactly which accessibility rules failed.
 
 ## Configuration reference
